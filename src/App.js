@@ -22,6 +22,7 @@ import arrow from './assets/arrow.png';
 import hands from './assets/hands.png';
 import handfooter from './assets/hand-footer.png';
 
+
 import { Footer, Blog, Possibility, Features, WhatGPT3 } from './containers';
 import { CTA, Brand, Navbar } from './components';
 
