@@ -1,0 +1,59 @@
+{
+  "name": "gpt3",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ilgim123.github.io",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-fade-in": "^2.0.1",
+    "react-faq-component": "^1.3.3",
+    "react-icons": "^4.3.1",
+    "react-modal": "^3.15.1",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^4.0.3",
+    "react-text-transition": "^2.0.0",
+    "react-type-animation": "^1.1.3",
+    "react-typed": "^1.2.0",
+    "react-typical": "^0.1.3",
+    "react-youtube": "^9.0.2",
+    "reactjs-popup": "^2.0.5",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
