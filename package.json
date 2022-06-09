@@ -2,7 +2,6 @@
   "name": "gpt3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ilgim123.github.io",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -31,8 +30,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
