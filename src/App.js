@@ -22,7 +22,6 @@ import arrow from './assets/arrow.png';
 import hands from './assets/hands.png';
 import handfooter from './assets/hand-footer.png';
 
-
 import { Footer, Blog, Possibility, Features, WhatGPT3 } from './containers';
 import { CTA, Brand, Navbar } from './components';
 
@@ -294,17 +293,17 @@ class App extends Component {
             <div className="gpt3__header-content">
               <h1 className="gradient__text">
                 Horde
-                <TypeAnimation
+                {/* <TypeAnimation
                   steps={["innovative symbiosis", 1000, "P2E zombie defence game", 1000]}
                   loop={Infinity}
                   wrapper="b"
-                  />
+                  /> */}
                 <br />
-                {/* <TypeAnimation
+                <TypeAnimation
                   cursor={false}
                   sequence={["Innovating DeFi", 1000, "More than a Daas protocol", 1000]}
                   wrapper="h1"
-                /> */}
+                />
               </h1>
               <p>Horde is an innovative symbiosis between a zero membership DaaS with stable coin protocols and an in development P2E zombie defence game, all integrated into a feeless ecosystem.</p>
               <div className="header-row">
