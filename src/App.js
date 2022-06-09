@@ -293,11 +293,11 @@ class App extends Component {
             <div className="gpt3__header-content">
               <h1 className="gradient__text">
                 Horde
-                {/* <TypeAnimation
+                <TypeAnimation
                   steps={["innovative symbiosis", 1000, "P2E zombie defence game", 1000]}
                   loop={Infinity}
                   wrapper="b"
-                  /> */}
+                  />
                 <br />
                 {/* <TypeAnimation
                   cursor={false}
