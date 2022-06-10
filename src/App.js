@@ -292,7 +292,7 @@ class App extends Component {
               <img className="horde-icon2" src={hordeicon} />
             </div>
             <div className="gpt3__header-content">
-              <h1 className="gradient__text">
+              <h1 className="gradient__text-header">
                 Horde
                 {/* <TypeAnimation
                   steps={["innovative symbiosis", 1000, "P2E zombie defence game", 1000]}

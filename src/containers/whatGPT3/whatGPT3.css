@@ -78,6 +78,9 @@
   .gpt3__whatgpt3-heading p {
     margin-top: 1rem;
   }
+  .gpt3__header-content {
+    width: 100%;
+  } 
 }
 
 @media screen and (max-width: 650px) {
@@ -95,6 +98,9 @@
     font-size: 28px;
     line-height: 40px;
   }
+  .gpt3__whatgpt3 {
+    padding: 0rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -103,6 +109,7 @@
     margin: 1rem 0;
     min-width: 100%;
   }
+
 }
 
 .Modal {

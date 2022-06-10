@@ -116,7 +116,7 @@
 
 .gpt3__header-image img {
   width: 80%;
-  height: 80%;
+  /* height: 80%; */
 }
 .gpt3__header-image2 img {
   width: 0px;
@@ -160,6 +160,9 @@
 }
 
 @media screen and (max-width: 490px) {
+  .gradient__text-header {
+    height: 200px;
+  }
   .gpt3__header-content h1 {
     font-size: 36px;
     line-height: 48px;
@@ -183,6 +186,40 @@
     width: 80%;
     height: 80%;
     margin-bottom: 5rem;
-
+  }
+  .gpt3__header-image2 {
+      margin-top: 2rem;
+  }
+  .footer-logo {
+    height: 60px !important;
+  }
+  .footer-logo2 {
+    height: 20px !important;
+  }
+  .gpt3__footer-links div{
+      width: auto;
+  }
+  .header-logo {
+    width: 0px;
+  }
+  .text-slate-200 {
+      font-size: 12px;
+  }
+  .roadmap {
+      margin: 5px !important;
+      width: auto !important;
+      padding: 3px !important;
+  }
+  .gpt3__navbar-links_logo {
+      margin-right: 0px !important;
+  }
+  .gpt3__footer-links {
+      flex-direction: column;
+  }
+  .header-row {
+      width: 100%;
+  }
+  .btn {
+      width: 50% !important;
   }
 }
