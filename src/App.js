@@ -400,8 +400,8 @@ class App extends Component {
                       <img className="arrow" src={arrow} />
                       <div class="text-slate-200">Epic community giveaways</div>
                     </div>
-                    <div class="roadmap-div2">
-                      <img className="arrow2" src={arrow} />
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
                       <div class="text-slate-200">3X NFT scenes to boost rewards</div>
                     </div>
                     <div class="roadmap-div">
@@ -416,9 +416,9 @@ class App extends Component {
                       <img className="arrow" src={arrow} />
                       <div class="text-slate-200">Souls paper v2.0</div>
                     </div>
-                    <div class="roadmap-div-end">
-                      <img className="arrow" src={arrow} />
-                      <div class="text-slate-200">NFT with new utilities - More scenes, zombie trophies and monuments</div>
+                    <div class="roadmap-div-end2">
+                      <img className="arrow2" src={arrow} />
+                      <div class="text-slate-201">NFT with new utilities - More scenes, zombie trophies and monuments</div>
                     </div>
                     <div class="roadmap-div-end">
                       <img className="arrow" src={arrow} />
