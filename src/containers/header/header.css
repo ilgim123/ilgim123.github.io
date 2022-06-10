@@ -16,8 +16,8 @@
 .gpt3__header-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 40px;
-  line-height: 75px;
+  /* font-size: 40px;
+  line-height: 40px; */
   letter-spacing: -0.04em;
 }
 
@@ -135,8 +135,8 @@
 
 @media screen and (max-width: 650px) {
   .gpt3__header-content h1 {
-    font-size: 48px;
-    line-height: 60px;
+    /* font-size: 48px; */
+    /* line-height: 60px; */
   }
 
   .gpt3__header-content p {
@@ -163,6 +163,15 @@
   .gradient__text-header {
     height: 200px;
   }
+  .gradient__text-header2 span {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+  .gpt3__header-content h1 {
+    height: 200px !important;
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
   .gpt3__header-content h1 {
     font-size: 36px;
     line-height: 48px;
@@ -188,7 +197,7 @@
     margin-bottom: 5rem;
   }
   .gpt3__header-image2 {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
   .footer-logo {
     height: 60px !important;
@@ -196,30 +205,44 @@
   .footer-logo2 {
     height: 20px !important;
   }
-  .gpt3__footer-links div{
-      width: auto;
+  .gpt3__footer-links div {
+    width: auto;
   }
   .header-logo {
     width: 0px;
   }
   .text-slate-200 {
-      font-size: 12px;
+    font-size: 12px;
   }
   .roadmap {
-      margin: 5px !important;
-      width: auto !important;
-      padding: 3px !important;
+    margin: 5px !important;
+    width: auto !important;
+    padding: 3px !important;
   }
   .gpt3__navbar-links_logo {
-      margin-right: 0px !important;
+    margin-right: 0px !important;
   }
   .gpt3__footer-links {
-      flex-direction: column;
+    flex-direction: column;
   }
   .header-row {
-      width: 100%;
+    width: 100%;
   }
   .btn {
-      width: 50% !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .gpt3__header-content h1 {
+    height: 230px !important;
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+  .gradient__text-header2 span {
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+  .horde-icon2 {
+    margin-bottom: 1rem;
   }
 }

@@ -193,27 +193,27 @@ class App extends Component {
       this.setState({ color: "rgba(255,255,255,0)" })
     }
   }
-  getTableData() {
-    let response = null;
-    new Promise(async (resolve, reject) => {
-      try {
-        response = await axios.get('https://api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
-          headers: {
-            'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
-          },
-        });
-        // success
-        const json = response.data;
-        console.log(json);
-      } catch (ex) {
-        response = null;
-        // error
-        console.log(ex);
-        reject(ex);
-      }
+  // getTableData() {
+  //   let response = null;
+  //   new Promise(async (resolve, reject) => {
+  //     try {
+  //       response = await axios.get('https://api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+  //         headers: {
+  //           'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
+  //         },
+  //       });
+  //       // success
+  //       const json = response.data;
+  //       console.log(json);
+  //     } catch (ex) {
+  //       response = null;
+  //       // error
+  //       console.log(ex);
+  //       reject(ex);
+  //     }
 
-    });
-  }
+  //   });
+  // }
   render() {
     return (
       <div className="App" >
@@ -292,13 +292,8 @@ class App extends Component {
               <img className="horde-icon2" src={hordeicon} />
             </div>
             <div className="gpt3__header-content">
-              <h1 className="gradient__text-header">
+              {/* <h1 className="gradient__text-header">
                 Horde
-                {/* <TypeAnimation
-                  steps={["innovative symbiosis", 1000, "P2E zombie defence game", 1000]}
-                  loop={Infinity}
-                  wrapper="b"
-                  /> */}
                 <br />
                 <Typed
                   strings={[
@@ -308,31 +303,32 @@ class App extends Component {
                   backSpeed={50}
                   loop >
                 </Typed>
-                {/* <TypeAnimation
-                    // cursor={false}
-                    sequence={["Innovating DeFi", 500, "More than a Daas protocol", 500]}
-                    wrapper="div"
-                  /> */}
-                {/* <div className="type-animation"> </div > */}
-
+              </h1> */}
+              <h1 className="gradient__text-header2">
+                Horde is &nbsp;
+                {/* <br /> */}
+                <Typed
+                  strings={[
+                    'an innovative symbiosis between a zero membership DaaS with stable coin protocols.',
+                    'an in development P2E zombie defence game.',
+                    'all integrated into a feeless ecosystem.'
+                  ]}
+                  typeSpeed={40}
+                  backSpeed={50}
+                  loop >
+                </Typed>
               </h1>
-              <p>Horde is an innovative symbiosis between a zero membership DaaS with stable coin protocols and an in development P2E zombie defence game, all integrated into a feeless ecosystem.</p>
+              {/* <p>Horde is an innovative symbiosis between a zero membership DaaS with stable coin protocols and an in development P2E zombie defence game, all integrated into a feeless ecosystem.</p> */}
               <div className="header-row">
                 <button class="btn btn2">Launch Dapp</button>
               </div>
               <img className="fog-image-new" src={fognew} />
-
-              {/* <div className="gpt3__header-content__people">
-                <img src={hordeicon} />
-                <p>1,600 people requested access a visit in last 24 hours</p>
-              </div> */}
             </div>
 
             <div className="gpt3__header-image">
               <img className="horde-icon" src={hordeicon} />
             </div>
           </div>
-          {/* <button onClick={this.handleOpenModal}>Trigger Modal</button> */}
           <Modal
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
@@ -341,60 +337,6 @@ class App extends Component {
 
             overlayClassName="Overlay"
           >
-            {/*
-            <div className="container-modal">
-              <div className="row-modal image-modal">
-                <div className="column-modal">
-                  <img className="LMS2" src={LMS} />
-                  <img className="LMST2" src={LMSTEXT} />
-                </div>
-                <img className="horde-modal" src={hordeicon} />
-              </div>
-              <div className="subcontainer-modal">
-                <p className="gpt3__header-content gradient__text subheader-modal">Mission statement</p>
-                <p>To help solve sustainability and infrastructural challenges for entreprenuers, protocols and dApps in web3.</p>
-                <p className="gpt3__header-content gradient__text subheader-modal">Why?</p>
-                <p>The first project launched by our team was HORDE. In the midst of one of the worst financial markets of our lives - we flurished.
-                  It became clear that our teams broad skill set encompassing developers, entrepreneurs, builders, community managers,
-                  marketers and the like was missing from many projects within the space. We believe that by offering our lessons learned,
-                  building blocks and expertise we can help uplift the next wave of web3. </p>
-              </div>
-              <h1 className="gpt3__header-content gradient__text header-modal">"OUR MODEL CREATES WIN-WIN-WIN SCENARIOS. WE WIN ONLY WHEN YOU DO."</h1>
-
-            </div>
-            <div className="container-modal">
-              <p className="gpt3__header-content gradient__text header-modal2">SERVICES OFFERED</p>
-              <div className="row-modal">
-                <div className="subcontainer-modal2">
-                  <p className="header-modal3">LMS</p>
-                  <p className="header-modal3">LIQUIDITY MANAGEMENT SERVICES</p>
-                  <p className="text-modal">One of our proprietary contracts created, written and developed over the course of a year will serve as stabilizing force within your community to build confidence, protect participants and enrich the space.</p>
-                </div>
-                <div className="subcontainer-modal2">
-                  <p className="header-modal3">COMMUNITY & MARKETING</p>
-                  <p className="text-modal">Our team has deep relationships within the cryptosphere. As a part of labs you will be introduced to every top personality resource and expert to gain insight, exposure and growth.</p>
-                </div>
-                <div className="subcontainer-modal2">
-                  <p className="header-modal3">STRATEGY & DEVELOPMENT</p>
-                  <p className="text-modal">The youthe of tommorow will determine the future but wisdom is gained only through experience. Our team includes several business veterans who have built and exited multi-million dolar companies around the globe. We will mentor and help guide you from a business, personal, legal and tax perspective</p>
-                </div>
-              </div>
-
-              <p className="gpt3__header-content gradient__text header-modal2">THREE LEGGED STOOL*</p>
-              <div className="subcontainer-modal3">
-                <p className="header-modal3">1. UPFRONT FINANCIAL COMMITMENT</p>
-                <p className="text-modal">We reinvest these fund 100% market buying back into your protocol to be stored in our first projects Treasury-HORDE.</p>
-              </div>
-              <div className="subcontainer-modal3">
-                <p className="header-modal3">2. LMS FEES</p>
-                <p className="text-modal">We collect between 0.25-0.50% based on the activity of our LM within your protocol. </p>
-              </div>
-              <div className="subcontainer-modal3">
-                <p className="header-modal3">3. WIN-WIN-WIN</p>
-                <p className="text-modal">We collect either a % of the team allocation or upside of the profit based on the growth and success of the protocol. If we do not deliver value, we are not rewarded. All tides rise together creating win-win-win relationships.</p>
-              </div>
-            </div>
- */}
             <div className="modal-align" onClick={this.handleCloseModal}>
               <img className="modalimage" src={modalimage} />
             </div>
@@ -458,8 +400,8 @@ class App extends Component {
                       <img className="arrow" src={arrow} />
                       <div class="text-slate-200">Epic community giveaways</div>
                     </div>
-                    <div class="roadmap-div">
-                      <img className="arrow" src={arrow} />
+                    <div class="roadmap-div2">
+                      <img className="arrow2" src={arrow} />
                       <div class="text-slate-200">3X NFT scenes to boost rewards</div>
                     </div>
                     <div class="roadmap-div">
