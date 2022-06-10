@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.146fd9ee.chunk.css",
-    "main.js": "/static/js/main.e8311c43.chunk.js",
-    "main.js.map": "/static/js/main.e8311c43.chunk.js.map",
+    "main.css": "/static/css/main.83e3f356.chunk.css",
+    "main.js": "/static/js/main.5de009f9.chunk.js",
+    "main.js.map": "/static/js/main.5de009f9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.166f362e.js",
     "runtime-main.js.map": "/static/js/runtime-main.166f362e.js.map",
     "static/css/2.450bcdb5.chunk.css": "/static/css/2.450bcdb5.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.745a5b9c.chunk.js.map": "/static/js/2.745a5b9c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.450bcdb5.chunk.css.map": "/static/css/2.450bcdb5.chunk.css.map",
-    "static/css/main.146fd9ee.chunk.css.map": "/static/css/main.146fd9ee.chunk.css.map",
+    "static/css/main.83e3f356.chunk.css.map": "/static/css/main.83e3f356.chunk.css.map",
     "static/js/2.745a5b9c.chunk.js.LICENSE.txt": "/static/js/2.745a5b9c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/foul_fiend-webfont.e949c0d3.woff",
     "static/media/LMS-TEXT.2950aba7.png": "/static/media/LMS-TEXT.2950aba7.png",
@@ -26,7 +26,7 @@
     "static/media/blog05.bfaa1c1e.png": "/static/media/blog05.bfaa1c1e.png",
     "static/media/fog-new.96b9efa7.png": "/static/media/fog-new.96b9efa7.png",
     "static/media/fog.3f841d53.png": "/static/media/fog.3f841d53.png",
-    "static/media/hand-footer.1fc29e15.png": "/static/media/hand-footer.1fc29e15.png",
+    "static/media/golden.7b3c6f34.png": "/static/media/golden.7b3c6f34.png",
     "static/media/hands.14107321.png": "/static/media/hands.14107321.png",
     "static/media/horde-logo.b9aa3b89.png": "/static/media/horde-logo.b9aa3b89.png",
     "static/media/hordelogo.98a88425.webp": "/static/media/hordelogo.98a88425.webp",
@@ -35,6 +35,7 @@
     "static/media/icon3.2ceac956.png": "/static/media/icon3.2ceac956.png",
     "static/media/icon4.6d0e6086.png": "/static/media/icon4.6d0e6086.png",
     "static/media/icon5.d90ff61f.png": "/static/media/icon5.d90ff61f.png",
+    "static/media/liquid.85b1ba2f.png": "/static/media/liquid.85b1ba2f.png",
     "static/media/logo-1.0ff7f8cb.png": "/static/media/logo-1.0ff7f8cb.png",
     "static/media/logo-2.4e0e87ce.png": "/static/media/logo-2.4e0e87ce.png",
     "static/media/logo-3.bcc4f892.png": "/static/media/logo-3.bcc4f892.png",
@@ -50,7 +51,7 @@
     "static/js/runtime-main.166f362e.js",
     "static/css/2.450bcdb5.chunk.css",
     "static/js/2.745a5b9c.chunk.js",
-    "static/css/main.146fd9ee.chunk.css",
-    "static/js/main.e8311c43.chunk.js"
+    "static/css/main.83e3f356.chunk.css",
+    "static/js/main.5de009f9.chunk.js"
   ]
 }
