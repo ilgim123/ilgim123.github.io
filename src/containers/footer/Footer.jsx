@@ -8,7 +8,9 @@ import discord from "../../assets/logo-discord.png";
 import reddit from "../../assets/logo-reddit.png";
 import youtube from "../../assets/logo-youtube.png";
 import "./footer.css";
-import hands from '../../assets/hands.png';
+import hands from "../../assets/hands.png";
+import liquid from "../../assets/liquid.png";
+import golden from "../../assets/golden.png";
 
 const Footer = () => (
   <div className="gpt3__footer section__padding3">
@@ -36,12 +38,19 @@ const Footer = () => (
         </div>
       </div>
       <div className="gpt3__footer-links_div">
+        <h4>LMS Partners</h4>
+        <div className="gpt3__footer-links_row">
+          <img src={liquid} className="footer-logo3" />
+          <img src={golden} className="footer-logo4" />
+        </div>
+      </div>
+      <div className="gpt3__footer-links_div">
         <h4>Socials</h4>
         <div className="gpt3__footer-links_row">
-        <img src={reddit} className="footer-logo2" />
-        <img src={discord} className="footer-logo2" />
-        <img src={twitter} className="footer-logo2" />
-        <img src={youtube} className="footer-logo2" />
+          <img src={reddit} className="footer-logo2" />
+          <img src={discord} className="footer-logo2" />
+          <img src={twitter} className="footer-logo2" />
+          <img src={youtube} className="footer-logo2" />
         </div>
       </div>
     </div>
@@ -49,7 +58,6 @@ const Footer = () => (
       <p>@2022 All rights reserved.</p>
     </div>
     <img className="backgrounobj-footer" src={hands} />
-
   </div>
 );
 

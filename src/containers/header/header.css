@@ -200,10 +200,17 @@
     margin-top: 2rem;
   }
   .footer-logo {
-    height: 60px !important;
+    height: 70px !important;
   }
   .footer-logo2 {
-    height: 20px !important;
+    height: 30px !important;
+  }
+  .footer-logo3 {
+    width: 70px !important;
+    object-fit: contain;
+  }
+  .footer-logo4 {
+    width: 120px !important;
   }
   .gpt3__footer-links div {
     width: auto;

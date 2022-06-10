@@ -21,7 +21,6 @@ import backgrounobj2 from './assets/backgroundobj2.png';
 import modalimage from './assets/modal.jpeg';
 import arrow from './assets/arrow.png';
 import hands from './assets/hands.png';
-import handfooter from './assets/hand-footer.png';
 
 import { Footer, Blog, Possibility, Features, WhatGPT3 } from './containers';
 import { CTA, Brand, Navbar } from './components';
@@ -154,7 +153,8 @@ class App extends Component {
     super();
     this.state = {
       texts: ["people,", "friends,", "influencers,", "you,"],
-      displayedText: "people,", showModal: false, toggleMenu: false, color: "rgba(255, 255, 255, 0)"
+      displayedText: "people,", showModal: false, toggleMenu: false, color: "rgba(255, 255, 255, 0)",
+      videoStatus: 1
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -359,7 +359,42 @@ class App extends Component {
           <div>
             <div className="container-youtube">
               <h1 className="gradient__text header-roadmap">JOIN THE HORDE</h1>
-              <iframe className="youtube-video" src="//www.youtube.com/embed/AnjV0n59iQo?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+              <div className="sub-container-youtube">
+                <div className="buttons-column">
+                  <button onClick={() => this.setState({ videoStatus: 1 })} className={this.state.videoStatus == 1 ? "active button-youtube" : "button-youtube"}>
+                    <h1>
+                      Video 1
+                    </h1>
+                  </button>
+                  <button onClick={() => this.setState({ videoStatus: 2 })} className={this.state.videoStatus == 2 ? "active button-youtube" : "button-youtube"}>
+                    <h1>
+                      Video 2
+                    </h1>
+                  </button>
+                  <button onClick={() => this.setState({ videoStatus: 3 })} className={this.state.videoStatus == 3 ? "active button-youtube" : "button-youtube"}>
+                    <h1>
+                      Video 3
+                    </h1>
+                  </button>
+                  <button onClick={() => this.setState({ videoStatus: 4 })} className={this.state.videoStatus == 4 ? "active button-youtube" : "button-youtube"}>
+                    <h1>
+                      Video 4
+                    </h1>
+                  </button>
+                </div>
+                {this.state.videoStatus == 1 ?
+                  <iframe className="youtube-video" src="//www.youtube.com/embed/AnjV0n59iQo?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                  : null}
+                {this.state.videoStatus == 2 ?
+                  <iframe className="youtube-video" src="//www.youtube.com/embed/soctahj2yzI?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                  : null}
+                {this.state.videoStatus == 3 ?
+                  <iframe className="youtube-video" src="//www.youtube.com/embed/AnjV0n59iQo?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                  : null}
+                {this.state.videoStatus == 4 ?
+                  <iframe className="youtube-video" src="//www.youtube.com/embed/soctahj2yzI?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                  : null}
+              </div>
             </div>
           </div>
         </Fade>
