@@ -7,7 +7,7 @@ import icon3 from "../../assets/icon3.png";
 import icon4 from "../../assets/icon4.png";
 import icon5 from "../../assets/icon5.png";
 import fog from "../../assets/fog.png";
-import LMS from "../../assets/LMS.png";
+import LMS from "../../assets/LMS-LOGO.png";
 import LMSTEXT from "../../assets/LMS-TEXT.png";
 import backgrounobj from "../../assets/backgroundobj.png";
 import FadeIn from "react-fade-in";
@@ -104,11 +104,10 @@ const WhatGPT3 = (props) => (
       </div>
       <button
         onClick={props.handleOpenModal}
-        className="gpt3__features-container__feature"
+        className="gpt3__features-container__feature align_center"
       >
         {/* <img className="fog-image-modal" src={fog} /> */}
         <img className="LMS" src={LMS} />
-        <img className="LMST" src={LMSTEXT} />
       </button>
     </div>
   </div>

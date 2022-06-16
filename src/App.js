@@ -186,7 +186,7 @@ class App extends Component {
     event.target.pauseVideo();
   }
   listenScrollEvent = e => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 100) {
       console.log("scrolled")
       this.setState({ color: '#040C18' })
     } else {
@@ -498,9 +498,8 @@ class App extends Component {
             </div>
           </div>
         </Fade>
-
         <Footer />
-        {/* <img className="backgrounobj-footer" src={handfooter} /> */}
+        {/* <img className="backgrounobj-footer" src={hands} /> */}
 
       </div >
     )

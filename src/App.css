@@ -7,6 +7,11 @@
 
 body {
   background: var(--color-bg);
+  background-image: url(assets/hands-bottom.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 800px;
+
 }
 
 a {
@@ -83,7 +88,7 @@ a {
   padding: 13rem 6rem !important;
 }
 .section__padding3 {
-  padding: 6rem 3rem;
+  padding: 6rem 3rem 0rem 3rem;
 }
 
 .section__margin {
@@ -132,7 +137,7 @@ a {
   .button-youtube {
     width: 100% !important;
   }
-  .buttons-column{
+  .buttons-column {
     width: 100% !important;
   }
   .container-youtube {
@@ -446,7 +451,7 @@ a {
 }
 
 .icon-image {
-  width: 20%;
+  height: 54px;
   margin-left: 0.5rem;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
@@ -518,9 +523,7 @@ a {
   animation: spin 16s linear infinite;
 }
 .backgrounobj-footer {
-  position: absolute;
-  left: 100px;
-  z-index: 4;
+  background-position: center bottom;
   height: 800px;
   opacity: 0.1;
   -webkit-transform: rotate(90deg);
@@ -1044,12 +1047,13 @@ a {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 2rem;
 }
 .buttons-column {
   display: flex;
   flex-direction: column;
   width: 45%;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-right: 2rem;
 }
 .button-youtube {
@@ -1073,6 +1077,7 @@ a {
   background-clip: padding-box;
   box-shadow: 0 3px 9px black, inset 0 0 9px rgba(255, 255, 255, 0.4);
   align-items: center;
+  min-height: 4rem;
 }
 .button-youtube h1 {
   font-size: 30px;
@@ -1086,9 +1091,10 @@ a {
   opacity: 0.7;
 }
 .youtube-video {
-  margin-top: 3rem;
-  width: 560px;
-  height: 315px;
+  /* margin-top: 3rem; */
+  padding: 0.5rem;
+  width: 100% !important;
+  height: auto!important;
 }
 .roadmap-div {
   display: flex;

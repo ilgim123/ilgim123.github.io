@@ -71,6 +71,7 @@
   /* letter-spacing: -0.04em; */
   color: #fff;
   font-family: "foul_fiend";
+  height: 80px;
 }
 
 .gpt3__features-container__feature-title div {
@@ -100,6 +101,7 @@
   .gpt3__features-container__feature-title h1 {
     font-size: 14px;
     line-height: 22px;
+    height: auto;
   }
 
   .gpt3__features-container_feature-text p {
@@ -110,4 +112,9 @@
   .gpt3__features-container__feature {
     margin: 1rem 0;
   }
+}
+.align_center {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
 }

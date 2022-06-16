@@ -205,6 +205,9 @@
   .footer-logo2 {
     height: 30px !important;
   }
+  .footer-logo2:hover {
+    opacity: 0.6 !important;
+  }
   .footer-logo3 {
     width: 70px !important;
     object-fit: contain;

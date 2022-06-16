@@ -17,6 +17,7 @@ const Footer = () => (
     <div className="gpt3__footer-heading">
       <h1 className="gradient__text">JOIN THE HORDE</h1>
     </div>
+    {/* <img className="backgrounobj-footer" src={hands} /> */}
 
     <div className="gpt3__footer-btn">
       <p>Launch Dapp</p>
@@ -57,7 +58,6 @@ const Footer = () => (
     <div className="gpt3__footer-copyright">
       <p>@2022 All rights reserved.</p>
     </div>
-    <img className="backgrounobj-footer" src={hands} />
   </div>
 );
 
