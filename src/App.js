@@ -21,6 +21,8 @@ import backgrounobj2 from './assets/backgroundobj2.png';
 import modalimage from './assets/modal.jpeg';
 import arrow from './assets/arrow.png';
 import hands from './assets/hands.png';
+import liquid from "./assets/liquid.png";
+import golden from "./assets/golden.png";
 
 import { Footer, Blog, Possibility, Features, WhatGPT3 } from './containers';
 import { CTA, Brand, Navbar } from './components';
@@ -39,90 +41,74 @@ const data = {
   // title: "FAQ (How it works)",
   rows: [
     {
-      title: "Where do I buy HORDE tokens? ",
-      content: `HORDE tokens will be able to be bought from SOULS SWAP at launch.`,
+      title: "Where can i trade HORDE tokens?",
+      content: `HORDE tokens can ONLY be traded on our Souls Swap: https://dapp.horde.games/soulsswap.`,
     },
     {
-      title: "How do I build on my plot?",
+      title: "How do I create a HORDE Plot, Souls Stone or Souls Rune?",
       content:
-        "Purchase 10 HORDE tokens for each plot and go to the HORDE official website.",
+        "Purchase 10 $HORDE tokens for a plot, 5 for a Souls Stone or 1 for a Souls Rune. Only with $BUSD on our official dApp. https://dapp.horde.games/dashboard After you have read T&C, you will discover the dashboard. Use the menu to navigate to Souls Swap. This is where you can use $BUSD to purchase $HORDE tokens. After purchasing tokens, navigate back to the Dashboard and find the ‘Create a Plot’ button. This is where your journey begins.",
     },
     {
-      title: "How much do a basic plot payout a day?",
-      content: `A basic plot without any scene upgrade or attachments will reward you with 0.1 HORDE a day.Meaning minimum 300% on maximum 300 days. This is again without ANY type of attachment.`,
+      title: "How much does a basic plot payout a day?",
+      content: `A basic plot without any NFT scene boost or attachments will reward you with 0.1 $HORDE a day for 300 days. This is 1% per day of your original 10 $HORDE investment. Souls Stones and Souls Runes will also reward 1% per day at equivalent values. The changing factor being the decaying date.`,
     },
     {
       title: "When will I start earning?",
-      content: "The exact same moment your plot is live, you start to receive your daily rewards (including plots purchased before game launch)."
+      content: "From the moment your plot is live, you start to receive rewards every 6 hours to the value of 1% per day of your original 10 tokens."
     },
     {
       title: "What is DaaS (De-fi as a Service), explain your intentions with this aspect?",
-      content: "This is like a hedge fund in crypto space, except we are focusing on investing in leading high yield and Metaverse protocols that we want to integrate into with our game in the near future, all voted for by our community. The team will make a poll on multiple projects that are suitable for our criteria, every time the treasury reaches $100k. The poll system is an Each community verified wallet gets a fair vote, in order to decide the investment, limited to only one vote per member to prevent any form of manipulation and keep it community driven."
+      content: "A DaaS is a title given to projects in the crypto space which mainly rely on generating profits from investments in order to pay out investors. At HORDE, we generate profits from multiple income streams and only use the idea of DaaS to help generate extra liquidity. We allocate funds to the treasury from the plot creations to be invested into ‘blue chips’ (elite crypto projects) and other cryptocurrencies which can provide profits from yield or staking, etc.. The team will make a poll on multiple projects that are suitable for our criteria. The poll system is only available to verified wallets through our discord verification process, limited to only one vote per member. This prevents any form of manipulation and keeps it fair to all participants."
     },
     {
-      title: "Do I have to own a plot to play the game?",
-      content: "Yes, a minimum of 1 plot must be owned to access the free play version of the game, you can purchase HORDE NFT Scenes to enable booster rewards and P2E bonus."
+      title: "Will the game be free to play? Do I have to own a plot, stone or rune?",
+      content: "Whilst some elements and competitions will be free for everyone to play, access to the full ecosystem will require ownership of a plot in order to participate. Whilst plots can be expensive for some, we have released Souls Stones and Souls Runes which allow more affordable entries and always do lots of giveaways to the community to give everyone a chance."
     },
     {
-      title: "Do I have to actually “play” to earn?",
-      content: "No, basic plots will earn rewards just the same, regardless of if you play the game or not. NFT Scenes upgrades will also continue to pay booster rewards. Of course, not playing the game, means you miss out on P2E bonuses and competitions."
+      title: "Do I have to play the HORDE game to earn rewards?",
+      content: "Participation in the game is not a requirement, however by not playing you miss out on bonuses and competitions that only players get access to."
     },
     {
-      title: "Is there a membership like other protocol?",
-      content: "No, we have a feeless ecosystem."
-    },
-    {
-      title: "Will you be burning tokens?",
-      content: "We have no plans to burn tokens, the supply is what we expect to be suitable for the project."
-    },
-    {
-      title: "Are your founders and team doxed?",
-      content: "We will be doing an private KYC and audit before launch."
-    },
-    {
-      title: "Does the project have an audit?",
-      content: "Certik Audit will be paid, and arranged right after the presale."
-    },
-    {
-      title: "Can I get my money back for the plot?",
-      content: "No, the same as other protocols, once a plot is created, you spend your tokens, and the reward mechanism starts for your plot."
-    },
-    {
-      title: "Can I resell my NFT upgrades?",
-      content: "Yes, but not all the NFTs… You will be able to sell your NFT scene upgrades such as Shelter, cabin, and military base in a secondary marketplace, but only once unstaked from your plot. Decaying NFTs like ‘Landmines’, ‘Security Fences’ and ‘Laserguns’ will not be available on the secondary marketplace, they will only be available through our official links found on our website."
-    },
-    {
-      title: "What happens to the 10 tokens I spent when I create a plot?",
-      content: "60% Reward pool. 20% Treasury. 20% Horde Pool. (See whitepaper for more details)"
-    },
-    {
-      title: "What is the treasury used for?",
-      content: "We are focused on investing in Metaverse style projects and other high yield protocols that our community vote for. These funds will be one of many mechanisms we have built in to not only maintain sustainability but will help us later launch in many metaverses."
-    },
-    {
-      title: "Is the treasury locked in any way?",
-      content: "Yes, it's a multisig wallet, and cannot just be rugged, stolen or hacked."
-    },
-    {
-      title: "How will your poll system work?",
-      content: "Each community verified wallet gets a fair vote, to decide."
-    },
-    {
-      title: "Is there a maximum number of plots per wallet?",
-      content: "Yes, a maximum of 100 plots will be owned by any individual wallet."
-    },
-    {
-      title: "What are “decaying plots”?",
-      content: "The decaying plots are designed within the protocol to create a new standard of reward payout sustainability. We reward plot owners a 300% ROI, we do not offer unrealistic ‘lifetime’ payouts.  This system creates new opportunities for different node building strategies."
-    },
-    {
-      title: "Will you claim your ROI and compound 2, or maybe compound all 3 and maximize your rewards by having no claim tax?",
-      content: "This dynamic is an exciting new way to create forms of passive node income, all captured within a P2E game with NFT add ons."
+      title: "Is membership free?",
+      content: "Yes! We do not charge any membership fees and only have a 10% sell tax to prevent swing trading of our token."
     },
     {
       title: "What infrastructure are you using for your dApp?",
-      content: "The website is deploy with firebase behind cloudflare. Our website is a serverless Single App Page. Meaning that when you reach our domain, it's actually cloudflare load balancer that capture it and distribute you all the files needed to run the dApp with their CDN. Once it's loaded on your device, unless you purge the cache, the dApp will communicate with the blockchain only. So a DDoS will have to take down a big chunk of the internet to get us down. And it'll only take down anyone that did not already loaded the dApp."
+      content: "The website is deployed with firebase behind cloudflare. Our website is a serverless Single App Page. Meaning that when you reach our domain, it's actually cloudflare load balancer that capture it and distribute you all the files needed to run the dApp with their CDN. Once it's loaded on your device, unless you purge the cache, the dApp will communicate with the blockchain only. So a DDoS will have to take down a big chunk of the internet to get us down. And it'll only take down anyone that did not already loaded the dApp."
     },
+    {
+      title: "What does it mean that the plots decay?",
+      content: "The decaying plots are a part of the protocol that help with creating a new standard of reward payout sustainability. We reward plot owners a 300% ROI, we do not offer ‘lifetime’ payouts. This system creates new opportunities for different node building strategies. Will you claim your ROI and compound 2, or maybe compound all 3 and maximize your rewards by having no claim tax? This dynamic is an exciting new way to create forms of passive node income, all captured within a P2E game with NFT add ons, such as church Square, search and Rescue and wasteland cabin"
+    },
+    {
+      title: "How is the treasury secured?",
+      content: "By a multisig accessible to KYCed founders"
+    },
+    {
+      title: "Why do you have a treasury? ",
+      content: "This is used as a liquidity buffer, in case extra liquidity is required. The investments can bring extra profits to help build our liquidity. This has never been used for replenishing any part of the protocol since we launched.."
+    },
+    {
+      title: "Are there any wallet limitations? ",
+      content: "Yes, a maximum of 100 plots, 2 Souls Stones and 10 Souls Runes. But only max 100 of variation in total."
+    },
+    {
+      title: "Are any token burns planned?",
+      content: "No, we have no current plans to burn any tokens. We decided that the supply of 1,111,111 is sufficient for our ecosystem."
+    },
+    {
+      title: "Is there a KYC for the team members?",
+      content: "Yes. Find below the link to our KYC by Assure. https://www.assuredefi.io/projects/horde/"
+    },
+    {
+      title: "Does HORDE have an audit?",
+      content: "Yes. We had an initial audit by Only Up Capital before launch. We then used funds from the Presale to pay for a full CERTIK audit. Find the link below. https://www.certik.com/projects/horde"
+    },
+    {
+      title: "What happens to my tokens when I purchase a Horde Plot, Souls Stone or Souls Rune?",
+      content: "Your tokens will be distributed as per the current tokenomic structure. You cannot claim these back straight away but will receive the daily rewards (every 6 hours) from the moment of creation."
+    }
   ],
 };
 const config = {
@@ -186,7 +172,7 @@ class App extends Component {
     event.target.pauseVideo();
   }
   listenScrollEvent = e => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 10) {
       console.log("scrolled")
       this.setState({ color: '#040C18' })
     } else {
@@ -292,43 +278,32 @@ class App extends Component {
               <img className="horde-icon2" src={hordeicon} />
             </div>
             <div className="gpt3__header-content">
-              {/* <h1 className="gradient__text-header">
-                Horde
-                <br />
-                <Typed
-                  strings={[
-                    'Innovating  DeFi',
-                    'More  than  a  Daas  protocol']}
-                  typeSpeed={40}
-                  backSpeed={50}
-                  loop >
-                </Typed>
-              </h1> */}
+              {/* HEADER IMG */}
+              <div className="gpt3__header-image">
+                <img className="horde-icon" src={hordeicon} />
+              </div>
+              {/* HEADER TEXT */}
               <h1 className="gradient__text-header2">
                 Horde is &nbsp;
                 {/* <br /> */}
                 <Typed
                   strings={[
-                    'an innovative symbiosis between a zero membership DaaS with stable coin protocols.',
-                    'an in development P2E zombie defence game.',
-                    'all integrated into a feeless ecosystem.'
+                    'innovative symbiosis of a stable coin backed liquidity managed protocol, a P2E game, and LMS stuff',
                   ]}
                   typeSpeed={40}
                   backSpeed={50}
-                  loop >
+                // loop
+                >
                 </Typed>
               </h1>
               {/* <p>Horde is an innovative symbiosis between a zero membership DaaS with stable coin protocols and an in development P2E zombie defence game, all integrated into a feeless ecosystem.</p> */}
-              <div className="header-row">
-                <button class="btn btn2">Launch Dapp</button>
-              </div>
+              {/* HEADER BUTTON */}
+              <button class="btn btn2">Launch Dapp</button>
+              {/* FOG IMG */}
               <img className="fog-image-new" src={fognew} />
             </div>
-
-            <div className="gpt3__header-image">
-              <img className="horde-icon" src={hordeicon} />
-            </div>
           </div>
+          {/* MODAL */}
           <Modal
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
@@ -342,13 +317,27 @@ class App extends Component {
             </div>
           </Modal>
         </div>
-        {/* <Brand /> */}
-        < img className="backgrounobj" src={backgrounobj} />
+
+        {/* BOXES */}
+        <img className="backgrounobj" src={backgrounobj} />
         <Fade bottom>
           <div>
             <WhatGPT3 handleOpenModal={this.handleOpenModal} />
           </div>
         </Fade>
+
+        {/* LMS PARTNERS */}
+        <Fade bottom>
+          <div className="partners-div">
+            <h2>LMS Partners</h2>
+            <div className="partners-div-row">
+              <img src={liquid} className="partners-img" />
+              <img src={golden} className="partners-img2" />
+            </div>
+          </div>
+        </Fade>
+
+
         <Fade right>
           <div>
             <img className="hands2" src={hands} />
