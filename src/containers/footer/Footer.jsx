@@ -1,5 +1,5 @@
 import React from "react";
-import gpt3Logo from "../../assets/hordelogo.webp";
+import gpt3Logo from "../../assets/horde-logo.png";
 import logo1 from "../../assets/logo-1.png";
 import logo2 from "../../assets/logo-2.png";
 import logo3 from "../../assets/logo-3.png";

@@ -32,7 +32,11 @@ import logo from "./assets/horde-logo.png";
 import "./components/navbar/navbar.css";
 import twitter from "./assets/logo-twitter.png";
 import discord from "./assets/logo-discord.png";
-
+import youtube from "./assets/logo-youtube.png";
+import reddit from "./assets/logo-reddit.png";
+import logo1 from "./assets/logo-1.png";
+import logo2 from "./assets/logo-2.png";
+import logo3 from "./assets/logo-3.png";
 
 import './App.css';
 import 'reactjs-popup/dist/index.css';
@@ -121,9 +125,11 @@ const config = {
 const styles = {
   bgColor: 'rgba(0,0,0,0)',
   titleTextColor: "linear-gradient(89.97deg, #1ED94F 1.24%, #F2F047 50.67%,#ffffff 140.67%)",
-  rowTitleColor: "white",
+  // rowTitleColor: "white",
   rowContentColor: 'white',
+  // background: "linear-gradient(89.97deg, #1ED94F 1.24%, #F2F047 50.67%,#ffffff 140.67%)",
   titleTextSize: '10px',
+  arrowColor: "white",
 };
 const opts = {
   height: '390',
@@ -229,6 +235,8 @@ class App extends Component {
               </div>
               <img src={twitter} className="header-logo" />
               <img src={discord} className="header-logo" />
+              <img src={youtube} className="header-logo" />
+              <img src={reddit} className="header-logo" />
             </div>
             <button class="btn5 btns">Launch Dapp</button>
             <div className="gpt3__navbar-menu">
@@ -242,7 +250,7 @@ class App extends Component {
                 <RiMenu3Line
                   color="#fff"
                   size={27}
-                  onClick={() => this.setState({ toggleMenu: false })}
+                  onClick={() => this.setState({ toggleMenu: true })}
                 />
               )}
               {this.state.toggleMenu && (
@@ -258,16 +266,16 @@ class App extends Component {
                       <a href="#possibility">Chart</a>
                     </p>
                     <p>
-                      <a href="#features">FAQs</a>
+                      <a href="#faq">FAQs</a>
                     </p>
                     <p>
                       <a href="#blog">Souls Paper</a>
                     </p>
                   </div>
-                  <div className="gpt3__navbar-menu_container-links-sign">
+                  {/* <div className="gpt3__navbar-menu_container-links-sign">
                     <p>Sign in</p>
                     <button type="button">Sign up</button>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
@@ -305,7 +313,7 @@ class App extends Component {
           </div>
           {/* MODAL */}
           <Modal
-            isOpen={this.state.showModal}
+            isOpen={this.state.showModal1}
             contentLabel="onRequestClose Example"
             onRequestClose={this.handleCloseModal}
             className="Modal"
@@ -313,7 +321,51 @@ class App extends Component {
             overlayClassName="Overlay"
           >
             <div className="modal-align" onClick={this.handleCloseModal}>
-              <img className="modalimage" src={modalimage} />
+              {/* <img className="modalimage" src={modalimage} /> */}
+              <div className="gpt3__whatgpt3-container">
+                <div className="gpt3__features-container__feature">
+                  <div className="gpt3__features-container__feature-title">
+                    <div />
+                    <h1>HORDE TREASURY</h1>
+                  </div>
+                  <div className="gpt3__features-container_feature-text">
+                    <p>
+                      A portion of the tokens from plot creations go toward building our
+                      Treasury. A fund used as a 'liquidity buffer'. With over $1 million
+                      invested into 'blue chips' and profit yielding protocols, its
+                      purpose is to aid liquidity, if ever required. The treasury has
+                      never been used to replenish any funds to the protocol and continues
+                      to grow.
+                    </p>
+                  </div>
+                </div>
+                <div className="gpt3__features-container__feature">
+                  <div className="gpt3__features-container__feature-title">
+                    <div />
+                    <h1>ZOMBIE P2E DEFENCE GAME</h1>
+                  </div>
+                  <div className="gpt3__features-container_feature-text">
+                    <p>
+                      Being built in the background, we are releasing a P2E zombie defence
+                      game, with NFT utility. Leading up to launch, we will be giving our
+                      community sneak peeks of the developments.
+                    </p>
+                  </div>
+                </div>
+                <div className="gpt3__features-container__feature">
+                  <div className="gpt3__features-container__feature-title">
+                    <div />
+                    <h1>ENHANCED NFTs</h1>
+                  </div>
+                  <div className="gpt3__features-container_feature-text">
+                    <p>
+                      Our NFTs have different uses in our ecosystem. They are the tools we
+                      use to combine the different branches of our protocol. From
+                      increasing reward % on plots to changing your characters skins.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </Modal>
         </div>
@@ -328,11 +380,22 @@ class App extends Component {
 
         {/* LMS PARTNERS */}
         <Fade bottom>
-          <div className="partners-div">
-            <h2>LMS Partners</h2>
-            <div className="partners-div-row">
-              <img src={liquid} className="partners-img" />
-              <img src={golden} className="partners-img2" />
+          <div className="partners-container">
+            <div className="partners-div">
+
+              <h2>Partners</h2>
+              <div className="partners-div-row">
+                <img src={logo1} className="partners-img" />
+                <img src={logo2} className="partners-img" />
+                <img src={logo3} className="partners-img2" />
+              </div>
+            </div>
+            <div className="partners-div">
+              <h2>LMS Partners</h2>
+              <div className="partners-div-row">
+                <img src={liquid} className="partners-img" />
+                <img src={golden} className="partners-img2" />
+              </div>
             </div>
           </div>
         </Fade>
@@ -393,6 +456,202 @@ class App extends Component {
             <div className="roadmap">
 
               <h1 className="gradient__text header-roadmap">ROAD MAP</h1>
+              <h2 >The journey so far and beyond…</h2>
+              <div class="align">
+                <div class="mt-12 relative py-px">
+                  <div class="roadmap-line"></div>
+                  <div class="roadmap-block">
+                    <span class="roadmap-block__circle"></span>
+                    <h1 class="text-lava-yellow text-lg font-semibold mb-2">2022 Q1</h1>
+
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>18th Feb</strong> - Discord server launched and we started to build our community.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>1st March</strong> - Souls Paper Volume 1 (litepaper) released.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>2nd March</strong> - KYC by Assure is complete.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>14th March</strong> - SOULS SWAP revealed.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>17th March</strong> - Pre launch AUDIT by Only Up Capital.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>19th March</strong> - Milestone organic growth of 10k Twitter followers and 5k Discord members.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>21st March</strong> - PRESALE - SOLD OUT in 28 mins! - $750,000 raised for LM, LP and Certik Audit.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>22nd March</strong> - LAUNCH DAY - Over $2.5m volume with 2000+ plots created in the first 12   hours,with only 19 hours to our first $100k Treasury milestone.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>25th March</strong> - $HORDE token listed on Coinmarket Cap and Coingecko.</div>
+                    </div>
+                  </div>
+                  <div class="roadmap-block">
+                    <span class="roadmap-block__circle right"></span>
+                    <h1 class="text-lava-yellow text-lg font-semibold mb-2">2022 Q2</h1>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>8th April</strong> - $250k Liquidity Pair Campaign initiated.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>11th April</strong> - +6.66% price range increase. From $95-105 up to $99-112.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>20th April</strong> - FLUX partnership announcement.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>22nd April</strong> - Milestone 5000 plots created.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>10th May</strong> - HORDE went live on FLUX.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>11th May</strong> - Presale participants celebrate making ROI.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>13th May</strong> - Our first ever NFT release - NFT Scene - Church Square.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>17th May</strong> - NFT Scene - Search & Rescue release.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>18th May</strong> - CERTIK AUDIT complete.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>21st May</strong> - NFT Scene - Wasteland Cabin.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>26th May</strong> - HORDE present LMS and offer Liquidity Management Service to other protocols.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>8th June</strong> - Our biggest investment poll so far - $420,000!</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>9th June</strong> - Fractional Plots Announced - Souls Runes and Souls Stones.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>12th June</strong> - First LMS partner announced - Golden Society</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>13th June</strong> - Fractional Plots Launched.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>15th June</strong> - New LMS Partner announced - Liquid Capital</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>16th June</strong> - Milestone 10,000 plots created.</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200"><strong>XXth JUNE</strong> - Souls Paper Volume 2 released </div>
+                    </div>
+                  </div>
+                  <div class="roadmap-block">
+                    <span class="roadmap-block__circle"></span>
+                    <h1 class="text-lava-yellow text-lg font-semibold mb-2">2022 Q3</h1>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">HORDE GAME development and demo releases.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">HORDE MERCH store.</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">Further LMS partnership announcements</div>
+                    </div>
+                    <div class="roadmap-div">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">New editions of NFT releases with new utilities TBA</div>
+                    </div>
+                  </div>
+                  <div class="roadmap-block">
+                    <span class="roadmap-block__circle right"></span>
+                    <h1 class="text-lava-yellow text-lg font-semibold mb-2">2022 Q4</h1>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">HORDE GAME Launch</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">HORDE LIVE a live stream of top leaderboard winners playing for huge cash prizes!</div>
+                    </div>
+                    <div class="roadmap-div-end">
+                      <img className="arrow" src={arrow} />
+                      <div class="text-slate-200">Further ecosystem development, becoming the standard for the DEFI space in stability with a huge network of projects implementing LMS.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Fade>
+        <img className="backgrounobj" src={backgrounobj2} />
+        <Fade bottom>
+          <div>
+            <div className="faq" id="faq">
+              <Fade bottom>
+                <div>
+                  <h1 className="gradient__text faq-roadmap">FREQUENTLY ASKED QUESTIONS</h1>
+                </div>
+              </Fade>
+              <Faq
+                data={data}
+                styles={styles}
+                config={config}
+              />
+            </div>
+          </div>
+        </Fade>
+        <Footer />
+        {/* <img className="backgrounobj-footer" src={hands} /> */}
+
+      </div >
+    )
+  }
+};
+
+export default App;
+
+
+{/* <Fade bottom>
+          <div>
+            <div className="roadmap">
+
+              <h1 className="gradient__text header-roadmap">ROAD MAP</h1>
+              <h2 >The journey so far and beyond…</h2>
               <div class="align">
                 <div class="mt-12 relative py-px">
                   <div class="roadmap-line"></div>
@@ -469,30 +728,4 @@ class App extends Component {
               </div>
             </div>
           </div>
-        </Fade>
-        <img className="backgrounobj" src={backgrounobj2} />
-        <Fade bottom>
-          <div>
-            <div className="faq">
-              <Fade bottom>
-                <div>
-                  <h1 className="gradient__text faq-roadmap">FREQUENTLY ASKED QUESTIONS</h1>
-                </div>
-              </Fade>
-              <Faq
-                data={data}
-                styles={styles}
-                config={config}
-              />
-            </div>
-          </div>
-        </Fade>
-        <Footer />
-        {/* <img className="backgrounobj-footer" src={hands} /> */}
-
-      </div >
-    )
-  }
-};
-
-export default App;
+        </Fade> */}

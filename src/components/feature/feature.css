@@ -95,6 +95,7 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--color-text);
+  text-align: left;
 }
 
 @media screen and (max-width: 550px) {

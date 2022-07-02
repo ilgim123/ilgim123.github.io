@@ -30,14 +30,14 @@ const WhatGPT3 = (props) => (
 
         <div className="gpt3__features-container__feature-title">
           <div />
-          <h1>TOKEN ECOSYSTEM</h1>
+          <h1>THE HORDE ECOSYSTEM</h1>
         </div>
         <div className="gpt3__features-container_feature-text">
           <p>
-            No membership, free to compound, all in a feeless ecosystem, with
-            only a 10% tax on sales, preventing swing trading of our tokens
-            value. P2E zombie defence game with multiple NFT utilities coming
-            soon, and the ability to play with friends.
+            The HORDE Ecosystem, a stabilised price innovation with zero
+            membership, claim and compounding fees. Merging DEFI, decaying plots
+            and NFTs with a P2E zombie defence game! Enter the wasteland to find
+            out what else zombies can do.
           </p>
         </div>
       </div>
@@ -47,44 +47,64 @@ const WhatGPT3 = (props) => (
         {/* <img className="fog-image-modal" src={fog} /> */}
         <div className="gpt3__features-container__feature-title">
           <div />
-          <h1>REWARD SYSTEM</h1>
+          <h1>LIQUIDITY MANAGER</h1>
         </div>
         <div className="gpt3__features-container_feature-text">
           <p>
-            Our reward system is based on stable coin tokenomics, this ensures
-            the sustainability of our ecosystem.Unique Stablised Payout
-            Protocol. Our smart contract uses the same strategy as a stable
-            coin, to ensure the sustainability of our reward system.
+            Our Liquidity manager, the brains behind our infamous flatline chart
+            and the star of our LMS. Since launch, it has delivered a stable
+            passive reward system with our tokens price kept inside a range of
+            around 10%.
           </p>
         </div>
       </div>
+      <button
+        onClick={props.handleOpenModal}
+        className="gpt3__features-container__feature"
+      >
+        {/* <img className="fog-image-modal" src={fog} /> */}
+        <img className="LMS" src={LMS} />
+        <div className="gpt3__features-container_feature-text">
+          <p>
+            Our Liquidity manager, the brains behind our infamous flatline chart
+            and the star of our LMS. Since launch, it has delivered a stable
+            passive reward system with our tokens price kept inside a range of
+            around 10%.
+          </p>
+        </div>
+      </button>
+    </div>
+    <div className="gpt3__whatgpt3-container">
       <div className="gpt3__features-container__feature">
         <img className="icon-image" src={icon3} />
         {/* <img className="fog-image-modal" src={fog} /> */}
         <div className="gpt3__features-container__feature-title">
           <div />
-          <h1>TREASURY</h1>
+          <h1>HORDE TREASURY</h1>
         </div>
         <div className="gpt3__features-container_feature-text">
           <p>
-            Each time the treasury hits 100k we will ask the community to vote
-            on a range of DeFi projects to invest in.
+            A portion of the tokens from plot creations go toward building our
+            Treasury. A fund used as a 'liquidity buffer'. With over $1 million
+            invested into 'blue chips' and profit yielding protocols, its
+            purpose is to aid liquidity, if ever required. The treasury has
+            never been used to replenish any funds to the protocol and continues
+            to grow.
           </p>
         </div>
       </div>
-    </div>
-    <div className="gpt3__whatgpt3-container">
       <div className="gpt3__features-container__feature">
         <img className="icon-image" src={icon4} />
         {/* <img className="fog-image-modal" src={fog} /> */}
         <div className="gpt3__features-container__feature-title">
           <div />
-          <h1>P2E GAME</h1>
+          <h1>ZOMBIE P2E DEFENCE GAME</h1>
         </div>
         <div className="gpt3__features-container_feature-text">
           <p>
-            P2E zombie defence game with multiple NFT utilities coming soon, and
-            the ability to play with friends.
+            Being built in the background, we are releasing a P2E zombie defence
+            game, with NFT utility. Leading up to launch, we will be giving our
+            community sneak peeks of the developments.
           </p>
         </div>
       </div>
@@ -93,22 +113,16 @@ const WhatGPT3 = (props) => (
         {/* <img className="fog-image-modal" src={fog} /> */}
         <div className="gpt3__features-container__feature-title">
           <div />
-          <h1>NFTS</h1>
+          <h1>ENHANCED NFTs</h1>
         </div>
         <div className="gpt3__features-container_feature-text">
           <p>
-            NFT scenes, weapons, and skins, make your plot customisable with
-            some even boosting rewards.
+            Our NFTs have different uses in our ecosystem. They are the tools we
+            use to combine the different branches of our protocol. From
+            increasing reward % on plots to changing your characters skins.
           </p>
         </div>
       </div>
-      <button
-        onClick={props.handleOpenModal}
-        className="gpt3__features-container__feature align_center"
-      >
-        {/* <img className="fog-image-modal" src={fog} /> */}
-        <img className="LMS" src={LMS} />
-      </button>
     </div>
   </div>
 );
