@@ -66,10 +66,10 @@ const WhatGPT3 = (props) => (
         <img className="LMS" src={LMS} />
         <div className="gpt3__features-container_feature-text">
           <p>
-            Our Liquidity manager, the brains behind our infamous flatline chart
-            and the star of our LMS. Since launch, it has delivered a stable
-            passive reward system with our tokens price kept inside a range of
-            around 10%.
+            We offer other crypto projects and protocols a complete solution to
+            providing them a stable token price, with many pairs, across
+            multiple chains. LMS partners provide transaction fees that feed our
+            liquidity manager.
           </p>
         </div>
       </button>

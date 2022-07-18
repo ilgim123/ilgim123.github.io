@@ -37,6 +37,8 @@ import reddit from "./assets/logo-reddit.png";
 import logo1 from "./assets/logo-1.png";
 import logo2 from "./assets/logo-2.png";
 import logo3 from "./assets/logo-3.png";
+import logo4 from "./assets/Obsidian_logo.png";
+import logo5 from "./assets/Bloom_logo.png";
 
 import './App.css';
 import 'reactjs-popup/dist/index.css';
@@ -387,6 +389,7 @@ class App extends Component {
               <div className="partners-div-row">
                 <img src={logo1} className="partners-img" />
                 <img src={logo2} className="partners-img" />
+                <img src={logo4} className="partners-img" />
                 <img src={logo3} className="partners-img2" />
               </div>
             </div>
@@ -394,6 +397,7 @@ class App extends Component {
               <h2>LMS Partners</h2>
               <div className="partners-div-row">
                 <img src={liquid} className="partners-img" />
+                <img src={logo5} className="partners-img" />
                 <img src={golden} className="partners-img2" />
               </div>
             </div>

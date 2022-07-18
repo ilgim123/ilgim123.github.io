@@ -3,6 +3,9 @@ import gpt3Logo from "../../assets/horde-logo.png";
 import logo1 from "../../assets/logo-1.png";
 import logo2 from "../../assets/logo-2.png";
 import logo3 from "../../assets/logo-3.png";
+import logo4 from "../../assets/Obsidian_logo.png";
+import logo5 from "../../assets/Bloom_logo.png";
+
 import twitter from "../../assets/logo-twitter.png";
 import discord from "../../assets/logo-discord.png";
 import reddit from "../../assets/logo-reddit.png";
@@ -36,6 +39,7 @@ const Footer = () => (
           <img src={logo1} className="footer-logo" />
           <img src={logo2} className="footer-logo" />
           <img src={logo3} className="footer-logo" />
+          <img src={logo4} className="footer-logo" />
         </div>
       </div>
       <div className="gpt3__footer-links_div">
@@ -43,6 +47,7 @@ const Footer = () => (
         <div className="gpt3__footer-links_row">
           <img src={liquid} className="footer-logo3" />
           <img src={golden} className="footer-logo4" />
+          <img src={logo5} className="footer-logo4" />
         </div>
       </div>
       <div className="gpt3__footer-links_div">
